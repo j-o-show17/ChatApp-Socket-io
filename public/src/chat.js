@@ -12,7 +12,6 @@ const messageTemplate = document.querySelector("#message-template").innerHTML;
 const locationMessageTemplate = document.querySelector("#location-message-template").innerHTML;
 const sidebarTemplate = document.querySelector("#sidebar-template").innerHTML;
 let params = new URLSearchParams(document.location.search);
-//const params = new URLSearchParams(queryString);
 const username = params.get("username");
 const room = params.get("room");
 

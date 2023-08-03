@@ -1,7 +1,7 @@
 const path = require("path");
 const http = require("http");
 const express = require("express");
-//const qs = require("qs");
+
 const socketio = require("socket.io");
 const { messages, messageLocation } =
 require(__dirname + "/public/src/messages");
@@ -12,7 +12,6 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 
-//require("dotenv").config();
 const port = process.env.PORT || 3000;
 app.use(express.static(__dirname + "/public"));
 
@@ -65,8 +64,6 @@ io.on("connection", socket => {
 
 
 });
-
-
 
 
 
